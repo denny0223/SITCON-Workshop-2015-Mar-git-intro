@@ -9,7 +9,7 @@ output: index.html
 <br />
 
 ## Denny Huang
-## 2014/12/07
+## 2015/3/8
 
 --
 
@@ -49,7 +49,7 @@ output: index.html
 
 --
 
-# Git / GitHub
+# Git / GitCafe / GitHub
 ## It&apos;s different
 
 --
@@ -546,7 +546,7 @@ output: index.html
 
 ### 事前準備
 
-* 註冊 [GitHub](http://github.com) 帳號
+* 註冊 [GitCafe](https://gitcafe.com/) 帳號
 * 確認已安裝 Git
 	* 在 Terminal 輸入 `git` 確認
 	* `sudo apt-get install git`
@@ -580,22 +580,8 @@ output: index.html
 
 --
 
-### Show branch names in $PS1
-
-<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
-
-<code>
-function parse\_git\_branch {<br />
-&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
-}<br />
-</code>
-
-`export PS1="\h:\W \u\$(parse_git_branch)$ "`
-
---
-
 # Practice
-## Create a new repo on GitHub
+## Create a new repo on GitCafe
 
 --
 
@@ -856,7 +842,7 @@ function parse\_git\_branch {<br />
 
 ### Add remote repo
 
-* `git remote add origin https://github.com/denny0223/workshop.git`
+* `git remote add origin https://gitcafe.com/denny0223/demo.git`
 
 * `git remote`
 
@@ -931,7 +917,7 @@ function parse\_git\_branch {<br />
 --
 
 <h1 style="font-size: 75px">
-  <a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">Generating SSH keys</a>
+  <a href="https://gitcafe.com/GitCafe/Help/wiki/%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%E5%92%8C%E8%AE%BE%E7%BD%AE-Git#2%E5%88%9B%E5%BB%BA-ssh-%E7%A7%98%E9%92%A5" target="_blank">Generating SSH keys</a>
 </h1>
 
 --
@@ -1220,6 +1206,20 @@ update
 ### Just for fun
 
 * <a href="https://github.com/gelstudios/gitfiti" target="_blank">gitfiti</a>
+
+--
+
+### Show branch names in $PS1
+
+<a href="http://xta.github.io/HalloweenBash/" target="_blank">Halloween Bash Profile Generator</a>
+
+<code>
+function parse\_git\_branch {<br />
+&nbsp;&nbsp; git branch --no-color 2&gt; /dev/null | sed -e '/^[^\*]/d' -e 's/* \(.*\)/(\1)/' <br />
+}<br />
+</code>
+
+`export PS1="\h:\W \u\$(parse_git_branch)$ "`
 
 --
 
